@@ -1,0 +1,25 @@
+This is the project which performs the CURD operations which includes get,post,update,delete operations on the API.
+in this project there will be 2 get methods 
+	1st get method is to get all the books for Eg. GET / will get all the books
+	2nd get method is to get a single book by its id for Eg. GET/book_1 it will get the book 1.
+there will be a put call which will be use to update the book for Eg. PUT/book_2 it will update the book 2.
+there will be a post call to create new books for Eg. POST / it will create a new book.
+there will be a delete call to delete a book for Eg. DELETE /book_3 it will delete book 3
+This all are known as CURD operations and used all over the web applications	
+
+// Path Parameters:-
+	So a path parameter is a wat that you can add additional variables to an API call.
+
+	@app.get("/books/{book_title}")
+async def read_book(book_title):
+    return {"book_title" : book_title}
+
+This is a simple example of Path Parameter here the book_title is the path parameter
+
+Path Parameter Enumeration
+	to create a automatic dropdown list within swagger that makes a user need to select one of the given elements so for that we have to use
+	path parameter enumeration
+
+The parameters which are inside the function that are the query parameter.
+The parameter which are inside the api call are path parameter.
+ 
